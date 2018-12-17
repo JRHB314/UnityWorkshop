@@ -223,6 +223,17 @@ Set the fields like so:<br>
 * walkFront:&nbsp;Pos X = 0&nbsp;&nbsp;| Pos Y = -1
 * walkLeft:&nbsp;&nbsp;&nbsp;Pos X = -1&nbsp;| Pos Y = 0
 <br>
+Play the game and try moving around. The correct animations should now play! However, there is no idle animation, and the character will continue to walk in place continuously.<br>
+<br>
+Go back to animator and hit the Base Layer to see the whole flow again. <br>
+<br>
+Create new blend Tree playerIdle. <br>
+<br>
+Double click it. This time, set the Parameters as lastX and lastY and use the facing animations.<br>
+* faceBack:&nbsp;&nbsp;Pos X = 0&nbsp;&nbsp;| Pos Y = 1
+* faceRight:&nbsp;Pos X = 1&nbsp;&nbsp;&nbsp;| Pos Y = 0
+* faceFront:&nbsp;Pos X = 0&nbsp;&nbsp;| Pos Y = -1
+* faceLeft:&nbsp;&nbsp;&nbsp;Pos X = -1&nbsp;| Pos Y = 0
 <br>
 <br>
 <br>
