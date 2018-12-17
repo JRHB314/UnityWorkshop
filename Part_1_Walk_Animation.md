@@ -140,9 +140,14 @@ Go back to Unity, and press play. If you hit the arrow keys you should be able t
 
 First we need to set up some parameters for the animation controller. <br>
 <br>
-In the Animator pane, go to the left bar and hit the tab that says Parameters. Hit the little plus symbol and create xMvmt and yMvmt as floats. These take in the current movement input values. Create lastX and lastY as floats. These hold the last x or y value before input stopped, allowing the animator to know which direction to leave the character facing. Finally, create isMoving as a bool. It will control whether a walking or a facing animation is playing.<br>
+In the Animator pane, go to the left bar and hit the tab that says `Parameters`. <br>
 <br>
-These variables will be updated by our script.<br>
+Hit the plus symbol to add these parameters:
+* xMvmt and yMvmt as floats - take in the current movement input values
+* lastX and lastY as floats - hold the last x or y value before input stopped, so animator knows which direction to leave the character facing
+* isMoving as a bool - controls whether a walking or a facing animation is playing
+<br>
+These parameters will be updated by our script.<br>
 <br>
 Declare our new private variables under the moveSpeed float.
 ```
@@ -186,4 +191,11 @@ All together, your code should look like this:<br>
 ![](/WorkshopImages/ConnectedScript.png)
 
 
-Drag the Animator pane to the bottom right for a second so we can view it and the Game pane at the same time. Press play and move around. You should see these values changes as the character moves. 
+Drag the Animator pane to the bottom right for a second so we can view it and the Game pane at the same time. Press play and move around. The parameters should change as the character moves.<br>
+<br>
+
+### Blend Trees
+
+Blend trees control which animation is playing based on input values. Rather than creating many individual transitions with individual conditions, you can simple create a blend tree that tracks one or more parameters and plays the correct animation when a condition is met. 
+
+
