@@ -187,6 +187,7 @@ anim.SetFloat("lastX", holdX);
 anim.SetFloat("lastY", holdY);
 anim.SetBool("isMoving", moving);
 ```
+
 All together, your code should look like this:<br>
 ![](/WorkshopImages/ConnectedScript.png)
 
