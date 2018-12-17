@@ -218,10 +218,10 @@ By default in takes in the first parameter only, which should be `xMove`. Go to 
 Add a `Motion` field by hitting the plus sign, then hitting `Add Motion Field`. A row should be added with a field that says `None (Motion)`. Click the circle icon to the right of it, then select the walkBack animation. Repeat with the other three walking animations.<br>
 <br>
 Set the fields like so:<br>
-* walkBack: &nbsp;Pos X = 0 &nbsp;| Pos Y = 1
-* walkRight: Pos X = 1 &nbsp;| Pos Y = 0
-* walkFront: Pos X = 0 &nbsp;| Pos Y = -1
-* walkLeft: &nbsp;Pos X = -1 | Pos Y = 0
+* walkBack:&nbsp;&nbsp;Pos X = 0&nbsp;&nbsp;| Pos Y = 1
+* walkRight:&nbsp;Pos X = 1&nbsp;&nbsp;| Pos Y = 0
+* walkFront:&nbsp;Pos X = 0&nbsp;&nbsp;| Pos Y = -1
+* walkLeft:&nbsp;&nbsp;Pos X = -1&nbsp;| Pos Y = 0
 <br>
 <br>
 <br>
