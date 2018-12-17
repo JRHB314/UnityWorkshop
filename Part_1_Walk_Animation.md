@@ -217,11 +217,11 @@ On the Animator view, right click -> `Create State` -> `From New Blend Tree`. Na
 By default in takes in the first parameter only, which should be `xMove`. Go to `Blend Type` and change type to `2D Simple Directional`. Add `yMove` as the second parameter.<br>
 Add a `Motion` field by hitting the plus sign, then hitting `Add Motion Field`. A row should be added with a field that says `None (Motion)`. Click the circle icon to the right of it, then select the walkBack animation. Repeat with the other three walking animations.<br>
 <br>
-Change the fields as so:<br>
-* walkBack: Pos X = 0, Pos Y = 1
-* walkRight: Pos X = 1, Pos Y = 0
-* walkFront: Pos X = 0, Pos Y = -1
-* walkLeft: Pos X = -1, Pos Y = 0
+Set the fields like so:<br>
+* walkBack:  Pos X = 0  | Pos Y = 1
+* walkRight: Pos X = 1  | Pos Y = 0
+* walkFront: Pos X = 0  | Pos Y = -1
+* walkLeft:  Pos X = -1 | Pos Y = 0
 <br>
 <br>
 <br>
