@@ -248,9 +248,9 @@ Add a transition from playerWalk to playerIdle.
 <br>
 Go back to the game and hit play.<br>  
 <br>
-If everything was done correctly, the character should now walk around, with walking and idle animations playing correctly.
+If everything was done correctly, the character should now walk around, with walking and idle animations playing correctly.<br>
 <br>
-And you're done!<br>
+Good job!<br>
 <br>
 
 ![](https://media.giphy.com/media/9uI997mC531DAUQmaU/giphy.gif)
