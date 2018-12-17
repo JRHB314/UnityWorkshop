@@ -157,14 +157,17 @@ private float holdX;
 private float holdY;
 private bool moving;
 ```
+
 On intialization, it should get the animator component for the current Game Object. In `Start`, add this line:
 ```
 anim = GetComponent<Animator>();
 ```
+
 At the beginning of `Update`, set moving to false; the code will assume moving is false unless movement is detected. 
 ```
 moving = false;
 ```
+
 If movement is detected, set moving to true, set our holdX or holdY value, and reset the other value (ie if holdX was set, reset holdY, and vice versa.) <br>
 <br>
 For horizontal:
@@ -173,12 +176,14 @@ moving = true;
 holdX = horiz;
 holdY = 0;
 ```
+
 For vertical:
 ```
 moving = true;
 holdY = vert;
 holdX = 0;
 ```
+
 Finally, pass all these values to the Animator.
 ```
 anim.SetFloat("xMvmt", horiz);
