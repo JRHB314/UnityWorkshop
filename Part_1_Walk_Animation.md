@@ -64,10 +64,10 @@ Animations are the actual clips. The animator, or animation controller, is what 
 <br>
 Going to the animations folder, there should be a new animation controller. Double click it to open up the Animator view. Drag the tab next to the animation tab (in the central section). <br>
 <br>
-Later, we will have a script to detect when the player is moving up, right, left, or down, and adjust the animation accordingly. For the moment, let’s just get the four clips to loop.<br>
+Later, we will have a script to detect when the player is moving up, right, left, or down, and adjust the animation accordingly. For the moment, let’s just get the four walking clips to loop. We won't worry about the facing animations yet, either. <br>
 <br>
-All four animations should be visible as bubbles on the screen. (Zoom out if you don’t see them all.) Right now, however, only one is connected to our entry point.<br>
-I recommend moving the four bubbles so walkBack is near the top, walkRight is near the right, walkFront is near the bottom, and walkLeft is near the left. <br>
+All animations should be visible as bubbles on the screen. (Zoom out if you don’t see them all.) Right now, however, only one is connected to our entry point.<br>
+I recommend moving the four walking bubbles so walkBack is near the top, walkRight is near the right, walkFront is near the bottom, and walkLeft is near the left. <br>
 <br>
 Right click on walkBack and hit `Make Transition`. An arrow will be created, and follow your mouse as you move.<br>
 Hover over walkRight and click it to connect the transition to it. <br>
@@ -138,4 +138,52 @@ Go back to Unity, and press play. If you hit the arrow keys you should be able t
 
 ### Connecting Script to Animator
 
+First we need to set up some parameters for the animation controller. <br>
+<br>
+In the Animator pane, go to the left bar and hit the tab that says Parameters. Hit the little plus symbol and create xMvmt and yMvmt as floats. These take in the current movement input values. Create lastX and lastY as floats. These hold the last x or y value before input stopped, allowing the animator to know which direction to leave the character facing. Finally, create isMoving as a bool. It will control whether a walking or a facing animation is playing.<br>
+<br>
+These variables will be updated by our script.<br>
+<br>
+Declare our new private variables under the moveSpeed float.
+```
+private Animator anim;
 
+private float holdX;
+private float holdY;
+private bool moving;
+```
+On intialization, it should get the animator component for the current Game Object. In `Start`, add this line:
+```
+anim = GetComponent<Animator>();
+```
+At the beginning of `Update`, set moving to false; the code will assume moving is false unless movement is detected. 
+```
+moving = false;
+```
+If movement is detected, set moving to true, set our holdX or holdY value, and reset the other value (ie if holdX was set, reset holdY, and vice versa.) <br>
+<br>
+For horizontal:
+```
+moving = true;
+holdX = horiz;
+holdY = 0;
+```
+For vertical:
+```
+moving = true;
+holdY = vert;
+holdX = 0;
+```
+Finally, pass all these values to the Animator.
+```
+anim.SetFloat("xMvmt", horiz);
+anim.SetFloat("yMvmt", vert); 
+anim.SetFloat("lastX", holdX);
+anim.SetFloat("lastY", holdY);
+anim.SetBool("isMoving", moving);
+```
+All together, your code should look like this:<br>
+![](/WorkshopImages/ConnectedScript.png)
+
+
+Drag the Animator pane to the bottom right for a second so we can view it and the Game pane at the same time. Press play and move around. You should see these values changes as the character moves. 
