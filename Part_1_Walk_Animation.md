@@ -42,7 +42,7 @@ Hit create. <br>
 Next to the `Save As` input box, hit the dropdown arrow for full view.<br> 
 Name the clip “walkBack” and save it in the Animations folder.<br> 
 <br>
-Change sample rate to 7. This is essentially your frames per second. For a simple pixel animation like this it needs to be rather low. <br> 
+Change `Samples` to 7. This is sample rate, essentially frames per second. For a simple pixel animation like this it needs to be rather low. <br> 
 In Project pane, find your character's spritesheet, open up the individual sprites, and drag the very first sprite into the beginning of the animation timeline (0:0). <br> 
 Drag the next 7 sprites into 0:1, 0:2, etc. They should all be facing back.<br> 
 
@@ -78,8 +78,8 @@ Note, do not uncheck “Has Exit Time”! This will cause the clip to be ignored
 <br>
 Repeat the process so walkRight is connected to walkFront, walkFront is connected to walkLeft, and walkLeft is connected back to walkBack.<br>
 ![](/WorkshopImages/Animator.png)
-<br>
-Hit play. The character should animate as if walking. Note, however, there is no actual motionm, even if you press the arrow keys. That will need to be done using a script.  
+<br><br>
+Hit play. The character should animate as if walking. Note, however, the character does not move around the scene, even if you press the arrow keys. That will need to be done using a script.  
 
 
 
