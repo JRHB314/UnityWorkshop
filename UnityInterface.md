@@ -10,7 +10,7 @@ If your screen does not look like above, I recommend this configuration.<br>
 
 ## Explanation of Tools
 
-Toolbar
+### Toolbar
 
 *	Hand – pans around the scene
 *	Move (cross) – moves objects within scene
@@ -26,3 +26,15 @@ Toolbar
 *	Account – access your account settings
 * Layers - view the layers of the scene
 *	Layout – current interface setup (save current as basic)
+
+### Hierarchy Pane
+Shows all the Game Objects in the current scene.
+
+### Project Pane
+Containes all the assets for the project, including music, sprites, and code.
+
+### Console
+Displays console messages.
+
+### Inspector Pane
+Access properties of a selected element.
