@@ -205,10 +205,10 @@ Drag the Animator pane to the bottom right for a second so we can view it and th
 
 Blend trees control which animation is playing based on input values. Rather than creating many individual transitions with individual conditions, you can simple create a blend tree that tracks one or more parameters and plays the correct animation when a condition is met. <br>
 <br>
-Compare this:
+Compare this:<br>
 ![](/WorkshopImages/normal.jpeg)
 <br>
-To this:
+To this:<br>
 ![](/WorkshopImages/blend.jpeg)
 
 
