@@ -50,9 +50,11 @@ Drag the next 7 sprites into 0:1, 0:2, etc. They should all be facing back.<br>
 
 Hit play to view the animation!<br> 
 <br> 
-Now we need walkFront, walkLeft, and walkRight. To create these other animations, you can go to the animator and hit the dropdown that is currently on "walkBack" (near top left of animation pane) and hit `Create Clip`. Alternatively, you can create these (and in future, all four) in the Animations folder (Right click ->  Create -> Animation) and then drag and drop them onto the character Game Object in the Hierarchy pane. <br>
+Now we need walkFront, walkLeft, and walkRight; faceBack, faceLeft, faceFront, and faceLeft.  To create these other animations, you can go to the animator and hit the dropdown that is currently on "walkBack" (near top left of animation pane) and hit `Create Clip`. Alternatively, you can create these (and in future, all eight) in the Animations folder (Right click ->  Create -> Animation) and then drag and drop them onto the character Game Object in the Hierarchy pane. <br>
 <br>
-Drag 8 sprites onto each animation, making sure the character direction matches the name of the clip.<br> 
+For the other walk animations, drag a set of 8 sprites onto each, making sure the character direction matches the name of the clip.<br> 
+<br>
+For the facing animations, simple drag and drop the first sprite of each set, again making sure the direction matches the clip.<br>
 <br>
 Tip: If you ever find you can’t drag and drop a sprite, make sure the character’s Game Object is still selected.<br>
 
@@ -132,7 +134,8 @@ Taking this movement amount, we want to transform our game object by translating
 <br>
 Vector3's are declared: `Vector3(horizontalValue, verticalValue, depthValue)`. As mentioned, this game won't use the depth, or z axis. <br>
 <br>
-Go back to Unity, and press play. If you hit the arrow keys you should be able to move the character! It doesn’t match the animation at all yet, but we have both components in place. 
+Go back to Unity, and press play. If you hit the arrow keys you should be able to move the character! It doesn’t match the animation at all yet, but both components are in place. 
 
+### Connecting Script to Animator
 
 
