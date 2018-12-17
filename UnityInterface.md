@@ -17,13 +17,10 @@ Toolbar
 *	Rotate (cycle) – rotates objects on x, y, or z axis
 *	Scale (arrows expanding) – shrink or expand objects maintaining scale
 *	Rect Transform (box) – shrink or expand objects while distorting scale
-*	Transform (cross circle) – combines Move, Rotate, and Scale<br>
-
+*	Transform (cross circle) – combines Move, Rotate, and Scale
 * Center/Pivot - affects pivot position for Game Objects
-* Local/Global - affects relative position of Game Objects<br>
-
-*	Play/Pause/Step – play or pause the game<br>
-
+* Local/Global - affects relative position of Game Objects
+*	Play/Pause/Step – play or pause the game
 * Collab - for syncing a project with other collaborators
 * Unity Services (cloud) - access to business tools like analytics
 *	Account – access your account settings
