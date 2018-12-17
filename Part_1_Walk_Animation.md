@@ -252,4 +252,4 @@ If everything was done correctly, the character should now walk around, with wal
 <br>
 And you're done!<br>
 <br>
-![](http://www.giphy.com/gifs/9uI997mC531DAUQmaU)
+![](https://media.giphy.com/media/9uI997mC531DAUQmaU/giphy.gif)
