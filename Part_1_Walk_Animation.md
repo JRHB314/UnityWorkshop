@@ -219,9 +219,9 @@ Add a `Motion` field by hitting the plus sign, then hitting `Add Motion Field`. 
 <br>
 Set the fields like so:<br>
 * walkBack:&nbsp;&nbsp;Pos X = 0&nbsp;&nbsp;| Pos Y = 1
-* walkRight:&nbsp;Pos X = 1&nbsp;&nbsp;| Pos Y = 0
+* walkRight:&nbsp;Pos X = 1&nbsp;&nbsp;&nbsp;| Pos Y = 0
 * walkFront:&nbsp;Pos X = 0&nbsp;&nbsp;| Pos Y = -1
-* walkLeft:&nbsp;&nbsp;Pos X = -1&nbsp;| Pos Y = 0
+* walkLeft:&nbsp;&nbsp;&nbsp;Pos X = -1&nbsp;| Pos Y = 0
 <br>
 <br>
 <br>
