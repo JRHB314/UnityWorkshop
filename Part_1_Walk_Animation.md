@@ -24,5 +24,6 @@ Slice!<br>
 There are now thin white lines indicating where the cuts have been made.<br>
 Hit `Apply` in the top right and then close the Sprite Editor window.<br>
 <br>
+In Project view, click the small arrow on the right of the spritesheet. It should open up the individual sprites contained. If the images appear cut off, you may have entered in the wrong number of rows or columns, or your spritesheet may not be the correct size for this workshop. 
 
-
+### Creating Animations
