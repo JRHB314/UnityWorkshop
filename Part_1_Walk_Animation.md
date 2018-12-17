@@ -31,4 +31,25 @@ In Project view, click the small arrow on the right of the spritesheet. It shoul
 Drag and drop the whole sheet (not one of the individual sprites) onto the scene. <br>
 Delete the animation and animation controller that is created automatically. <br>
 <br>
-Hit ctrl+6 (on Windows) or ⌘+6 (on Mac) to open up the Animation pane. Drag and drop this new view as a tab next to `Game`.
+Hit ctrl+6 (on Windows) or ⌘+6 (on Mac) to open up the Animation pane. Drag and drop this new view as a tab next to `Game`.<br> 
+<br> 
+In Project view, go back to the top Assets folder and create a folder called "Animations". <br> 
+Click on your character's Game Object in the Hierarchy pane. (Should be right after "camera".)<br> 
+In the Animation pane, it should say “To begin animating [character], create an Animation Clip.<br> 
+Hit create. <br> 
+Next to the `Save As` input box, hit the dropdown arrow for full view.<br> 
+Name the clip “walkBack” and save it in the Animations folder.<br> 
+<br>
+Change sample rate to 7. This is essentially your frames per second. For a simple pixel animation like this it needs to be rather low. <br> 
+In Project pane, find your character's spritesheet, open up the individual sprites, and drag the very first sprite into the beginning of the animation timeline (0:0). <br> 
+Drag the next 7 sprites into 0:1, 0:2, etc. They should all be facing back.<br> 
+Hit play to view the animation!<br> 
+<br> 
+Now we need walkFront, walkLeft, and walkRight. To create these other animations, you can go to the animator and hit the dropdown that is currently on "walkBack" (near top left of animation pane) and hit `Create Clip`. Alternatively, you can create these (and in future, all four) in the Animations folder (Right click ->  Create -> Animation) and then drag and drop them onto the character Game Object in the Hierarchy pane. <br>
+<br>
+Drag 8 sprites onto each animation, making sure the character direction matches the name of the clip.<br> 
+<br>
+Tip: If you ever find you can’t drag and drop a sprite, make sure the character’s Game Object is still selected.<br>
+<br>
+
+
