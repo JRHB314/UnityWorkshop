@@ -89,7 +89,7 @@ In Project pane, navigate to the top folder, then create a new folder called "Sc
 Inside this folder, create a new C# script called CharacterMovement.<br>
 Drag and drop it on the character's Game Object in order to connect them.<br>
 <br>
-Now, if you double click this, it will open up Visual Basic. I personally do not like Visual Basic. To use something else, you can instead right click on the script, hit `Reveal in Finder`, and then open with your text editor of choice.<br>
+Now, if you double click this, it will open up Visual Studio (not Visual Studio Code). If you prefer something else, you can instead right click on the script, hit `Reveal in Finder`, and then open with your text editor of choice.<br>
 <br> 
 Once you open up the script you will see that it has a few “using” statements, a public class that uses Monobehavior as a base class, and two functions. Do not remove these, as they are necessary for the script to work with Unity.<br>
 <br>
