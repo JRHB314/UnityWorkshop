@@ -150,6 +150,7 @@ Hit the plus symbol to add these parameters:
 These parameters will be updated by our script.<br>
 <br>
 Declare our new private variables under the moveSpeed float.
+
 ```
 private Animator anim;
 
