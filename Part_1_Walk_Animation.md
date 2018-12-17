@@ -26,6 +26,8 @@ Hit `Apply` in the top right and then close the Sprite Editor window.<br>
 <br>
 In Project view, click the small arrow on the right of the spritesheet. It should open up the individual sprites contained. If the images appear cut off, you may have entered in the wrong number of rows or columns, or your spritesheet may not be the correct size for this workshop. 
 
+![](/WorkshopImages/Sprites.png)
+
 ### Creating Animations
 
 Drag and drop the whole sheet (not one of the individual sprites) onto the scene. <br>
@@ -43,6 +45,9 @@ Name the clip “walkBack” and save it in the Animations folder.<br>
 Change sample rate to 7. This is essentially your frames per second. For a simple pixel animation like this it needs to be rather low. <br> 
 In Project pane, find your character's spritesheet, open up the individual sprites, and drag the very first sprite into the beginning of the animation timeline (0:0). <br> 
 Drag the next 7 sprites into 0:1, 0:2, etc. They should all be facing back.<br> 
+
+![](/WorkshopImages/Animation.png)
+
 Hit play to view the animation!<br> 
 <br> 
 Now we need walkFront, walkLeft, and walkRight. To create these other animations, you can go to the animator and hit the dropdown that is currently on "walkBack" (near top left of animation pane) and hit `Create Clip`. Alternatively, you can create these (and in future, all four) in the Animations folder (Right click ->  Create -> Animation) and then drag and drop them onto the character Game Object in the Hierarchy pane. <br>
@@ -72,7 +77,7 @@ Tap on walkBack to select it, and then in the Inspector pane, select the transit
 Note, do not uncheck “Has Exit Time”! This will cause the clip to be ignored as there are no other conditions currently. <br>
 <br>
 Repeat the process so walkRight is connected to walkFront, walkFront is connected to walkLeft, and walkLeft is connected back to walkBack.<br>
-{img}
+![](/WorkshopImages/Animator.png)
 Hit play. The character should animate as if walking. Note, however, there is no actual motionm, even if you press the arrow keys. That will need to be done using a script.  
 
 
