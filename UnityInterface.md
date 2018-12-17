@@ -37,6 +37,6 @@ Containes all the assets for the project, including music, sprites, and code.
 Displays console messages.
 
 ### Inspector Pane
-Access properties of a selected element.
+Access properties of a selected element.<br>
 <br>
 For more information, refer to the relevant [Unity Manual](https://docs.unity3d.com/Manual/UsingTheEditor.html) pages. 
