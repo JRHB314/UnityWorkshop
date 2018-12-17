@@ -78,6 +78,7 @@ Note, do not uncheck “Has Exit Time”! This will cause the clip to be ignored
 <br>
 Repeat the process so walkRight is connected to walkFront, walkFront is connected to walkLeft, and walkLeft is connected back to walkBack.<br>
 ![](/WorkshopImages/Animator.png)
+<br>
 Hit play. The character should animate as if walking. Note, however, there is no actual motionm, even if you press the arrow keys. That will need to be done using a script.  
 
 
