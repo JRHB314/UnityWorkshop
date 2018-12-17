@@ -130,6 +130,9 @@ If we don’t take this into account, and simply move the character the same amo
 <br>
 Taking this movement amount, we want to transform our game object by translating it. Translating in this case means moving through space. We do this using a vector object. A vector being a direction + magnitude. Specifically, we’ll use a vector3 object, a vector in 3 dimensions. Even though we’re only using 2 (x and y) for this game, Unity operates in 3. <br>
 <br>
+Vector3's are declared: `Vector3(horizontalValue, verticalValue, depthValue)`. As mentioned, this game won't use the depth, or z axis. <br>
+<br>
+Go back to Unity, and press play. If you hit the arrow keys you should be able to move the character! It doesn’t match the animation at all yet, but we have both components in place. 
 
 
 
