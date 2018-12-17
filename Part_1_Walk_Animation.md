@@ -27,3 +27,8 @@ Hit `Apply` in the top right and then close the Sprite Editor window.<br>
 In Project view, click the small arrow on the right of the spritesheet. It should open up the individual sprites contained. If the images appear cut off, you may have entered in the wrong number of rows or columns, or your spritesheet may not be the correct size for this workshop. 
 
 ### Creating Animations
+
+Drag and drop the whole sheet (not one of the individual sprites) onto the scene. <br>
+Delete the animation and animation controller that is created automatically. <br>
+<br>
+Hit ctrl+6 (on Windows) or ⌘+6 (on Mac) to open up the Animation pane. Drag and drop this new view as a tab next to `Game`.
