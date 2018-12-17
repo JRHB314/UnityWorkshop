@@ -38,3 +38,5 @@ Displays console messages.
 
 ### Inspector Pane
 Access properties of a selected element.
+<br>
+For more information, refer to the relevant [Unity Manual](https://docs.unity3d.com/Manual/UsingTheEditor.html) pages. 
