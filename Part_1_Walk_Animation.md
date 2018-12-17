@@ -31,7 +31,7 @@ In Project view, click the small arrow on the right of the spritesheet. It shoul
 Drag and drop the whole sheet (not one of the individual sprites) onto the scene. <br>
 Delete the animation and animation controller that is created automatically. <br>
 <br>
-Hit ctrl+6 (on Windows) or ⌘+6 (on Mac) to open up the Animation pane. Drag and drop this new view as a tab next to `Game`.<br> 
+Hit ctrl+6 (on Windows) or ⌘+6 (on Mac) to open up the Animation pane. Drag and drop this new view as a tab next to the Game view's tab.<br> 
 <br> 
 In Project view, go back to the top Assets folder and create a folder called "Animations". <br> 
 Click on your character's Game Object in the Hierarchy pane. (Should be right after "camera".)<br> 
@@ -50,6 +50,31 @@ Now we need walkFront, walkLeft, and walkRight. To create these other animations
 Drag 8 sprites onto each animation, making sure the character direction matches the name of the clip.<br> 
 <br>
 Tip: If you ever find you can’t drag and drop a sprite, make sure the character’s Game Object is still selected.<br>
+
+### Setting Up Animator
+
+Animations are the actual clips. The animator, or animation controller, is what controls the flow of animations. Here you can set conditions for when which clip should play at what time.<br>
 <br>
+Going to the animations folder, there should be a new animation controller. Double click it to open up the Animator view. Drag the tab next to the animation tab (in the central section). <br>
+<br>
+Later, we will have a script to detect when the player is moving up, right, left, or down, and adjust the animation accordingly. For the moment, let’s just get the four clips to loop.<br>
+<br>
+All four animations should be visible as bubbles on the screen. (Zoom out if you don’t see them all.) Right now, however, only one is connected to our entry point.<br>
+I recommend moving the four bubbles so walkBack is near the top, walkRight is near the right, walkFront is near the bottom, and walkLeft is near the left. <br>
+<br>
+Right click on walkBack and hit `Make Transition`. An arrow will be created, and follow your mouse as you move.<br>
+Hover over walkRight and click it to connect the transition to it. <br>
+Tap on walkBack to select it, and then in the Inspector pane, select the transition we just made. <br>
+* Open up `Settings`
+* Set `Exit Time` to zero
+* Set `Transition Duration` to zero
+
+Note, do not uncheck “Has Exit Time”! This will cause the clip to be ignored as there are no other conditions currently. <br>
+<br>
+Repeat the process so walkRight is connected to walkFront, walkFront is connected to walkLeft, and walkLeft is connected back to walkBack.<br>
+{img}
+Hit play. The character should animate as if walking. Note, however, there is no actual motionm, even if you press the arrow keys. That will need to be done using a script.  
+
+
 
 
