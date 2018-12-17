@@ -225,20 +225,30 @@ Set the fields like so:<br>
 <br>
 Play the game and try moving around. The correct animations should now play! However, there is no idle animation, and the character will continue to walk in place continuously.<br>
 <br>
-Go back to animator and hit the Base Layer to see the whole flow again. <br>
+Go back to animator and hit the `Base Layer` (label near top middle) to see the whole flow again. <br>
 <br>
 Create new blend Tree playerIdle. <br>
 <br>
 Double click it. This time, set the Parameters as lastX and lastY and use the facing animations.<br>
+
 * faceBack:&nbsp;&nbsp;Pos X = 0&nbsp;&nbsp;| Pos Y = 1
 * faceRight:&nbsp;Pos X = 1&nbsp;&nbsp;&nbsp;| Pos Y = 0
 * faceFront:&nbsp;Pos X = 0&nbsp;&nbsp;| Pos Y = -1
 * faceLeft:&nbsp;&nbsp;&nbsp;Pos X = -1&nbsp;| Pos Y = 0
+
+Go back the `Base Layer`. Right click on playerIdle and select `Set as Layer Default State`, i.e., the state that starts the flow on the Base Layer.  <br>
+Add a transition from playerIdle to playerWalk. 
+* Uncheck exit time
+* Set transition time to 0 
+* Add `Condition` by selecting `isMoving` in the first dropdown, and `true` in the second. 
+Add a transition from playerWalk to playerIdle.
+* Uncheck exit time
+* Set transition time to 0 
+* Add `Condition` by selecting `isMoving` in the first dropdown, and `false` in the second. 
 <br>
+Go back to the game and hit play.<br>  
 <br>
+If everything was done correctly, the character should now walk around, with walking and idle animations playing correctly.
 <br>
-<br>
-<br>
-<br>
-<br>
+And you're done!<br>
 <br>
