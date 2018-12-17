@@ -81,6 +81,55 @@ Repeat the process so walkRight is connected to walkFront, walkFront is connecte
 <br><br>
 Hit play. The character should animate as if walking. Note, however, the character does not move around the scene, even if you press the arrow keys. That will need to be done using a script.  
 
+### Movement Script
+
+In Project pane, navigate to the top folder, then create a new folder called "Scripts". <br>
+Inside this folder, create a new C# script called CharacterMovement.<br>
+Drag and drop it on the character's Game Object in order to connect them.<br>
+<br>
+Now, if you double click this, it will open up Visual Basic. I personally do not like Visual Basic. To use something else, you can instead right click on the script, hit `Reveal in Finder`, and then open with your text editor of choice.<br>
+<br> 
+Once you open up the script you will see that it has a few “using” statements, a public class that uses Monobehavior as a base class, and two functions. Do not remove these, as they are necessary for the script to work with Unity.<br>
+<br>
+Most actions will be performed in either the `Start` or the `Update` functions.
+* Start runs once, when the script is first run (usually on scene load.)
+* Update runs continuously in a loop, executing once per frame. 
+
+Right under `public class CharacterMovment : MonoBehaviour { ` (before the functions) insert this line:
+```
+public float moveSpeed;
+```
+First declare a public float "moveSpeed". One nice thing about Unity is that publicly declared variables will be visible inside the program itself.<br>
+<br>
+Back in Unity, click on the character'S Game Object, and scroll down on the Inspector pane until you see the `Script` element. There should now be a box called Move Speed with an input box you can change.<br>
+<br>
+Note, changing the variable should only change that value for this object, this “instance” of the script. If you had this script on two objects, they could have two different speeds.<br>
+Also note this only works for public variables; private variables will not be visible inside Unity. <br>
+<br>
+Inside Update, insert these lines: 
+```
+float horiz = Input.GetAxisRaw("Horizontal");
+float vert = Input.GetAxisRaw("Vertical");
+
+if(horiz > 0f || horiz < 0f) {
+	float movement = horiz * moveSpeed * Time.deltaTime;
+	transform.Translate(new Vector3(movement, 0f, 0f));
+}
+if(vert > 0f || vert < 0f) {
+	float movement = vert * moveSpeed * Time.deltaTime;
+	transform.Translate(new Vector3(0f, movement, 0f));
+}
+```
+First it gets the horizontal and vertical data from our input device. These values are floats from -1 to 1. Right and Up return positive values. Left and Down return negative values. They are floats because it is possible to have a stronger or weaker push in a direction; think a joystick that's only pushed halfway. A smaller push returns a smaller (magnitude) value and would correlate to slower movement.<br>
+<br>
+It then checks if input is greater than or less than zero for either horizontal or vertical input. <br>
+When input is detected, it calculates how much the character should be moved.<br>
+<br>
+First we have the input value. This is multiplied by the moveSpeed. That probably makes sense. However, we also need to multiply by something called time.deltaTime.  This is “the time between the current and previous frame.” That is, each frame takes a certain (very small) amount of time. This checks how far along we are in the frame when the line of code runs. <br>
+If we don’t take this into account, and simply move the character the same amount every single time, the movement will be choppy. <br>
+<br>
+Taking this movement amount, we want to transform our game object by translating it. Translating in this case means moving through space. We do this using a vector object. A vector being a direction + magnitude. Specifically, we’ll use a vector3 object, a vector in 3 dimensions. Even though we’re only using 2 (x and y) for this game, Unity operates in 3. <br>
+<br>
 
 
 
