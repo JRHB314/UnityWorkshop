@@ -8,4 +8,8 @@ First, download and install Unity. The [personal edition](https://store.unity.co
 
 You'll also need to create a Unity account. You can either do that on the website or after you open up the Unity program. 
 
+## Goals
+
+This workshop will focus on 2D pixel art in a top-down RPG style. It will start with simply creating a character that can walk around a scene. This may eventually be expanded to include creating dialogue, fighting enemies, and other such elements.
+
 
