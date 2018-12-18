@@ -1,4 +1,4 @@
-# Walk Animation
+# Character Movement
 
 ### Importing your character spritesheet
 
