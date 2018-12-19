@@ -14,7 +14,7 @@ Make the following changes:
 * Go to advanced and change Filter Mode to `Point (no filter)`. This is important for pixel art! Otherwise it will appear blurry.
 
 ### Slicing spritesheet
-Now open Sprite editor. You may have to hit `Apply` to `Import Changes`. <br>
+Now open Sprite editor (there is a button in the Inspector). You may have to hit `Apply` to `Import Changes`. <br>
 In the top bar of the new window hit Slice. We want to cut up our spritesheet into individual sprites. <br>
 Choose Type `Grid by Cell Count`. This will have Unity automatically slice based on how many sprites are on the sheet, rather than having to enter the dimensions of the sprites. Both options work, but I find this way easier.<br>
 Set C (columns) to 9, and R (rows) to 4.<br>
