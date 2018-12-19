@@ -280,11 +280,11 @@ targetPos is set by creating a new Vector3 that takes in our three position valu
 Save, then go back to Unity. Change Camera Speed to 8, and drag and drop the character Game Object onto the `Target` field.<br>
 If you go to the game and hit play, try moving around. You can see the camera now follows a bit behind the player, and catches up when you stop moving. It may seem like the player stops moving entirely because the background is a flat color, this can easily be changed by adding in a patterned background. <br>
 <br>
-Go to the `Sprites` folder in this workshop, and download the "grass.png" file. In your Unity Assets, create a folder called "Backgrounds" and import the grass file.<br>
+Go to the `Sprites` folder in this workshop, and download the "grass.png" file. In your Unity Assets, create a folder called "Background" and import the grass file.<br>
 Click on the grass to open inspector. Change `Pixels Per Unit` to 32, and `Filter Mode` to `Point (no filter)`.<br>
 Drag and drop the grass onto your scene so it's fairly centered under the camera. <br>
 <br>
-Tip: If at any point your character becomes covered by the background, go to the inspector for the Game Object (not the spritesheet) and under `Sprite Renderer` change `Order in Layer` to 1.<br>
+Tip: If at any point your character becomes covered by the background, go to the inspector for the character's Game Object (not the spritesheet) and under `Sprite Renderer` change `Order in Layer` to 1.<br>
 <br>
 Hit play.<br>
 <br>
