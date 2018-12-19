@@ -284,6 +284,8 @@ Go to the `Sprites` folder in this workshop, and download the "grass.png" file. 
 Click on the grass to open inspector. Change `Pixels Per Unit` to 32, and `Filter Mode` to `Point (no filter)`.<br>
 Drag and drop the grass onto your scene so it's fairly centered under the camera. <br>
 <br>
+Tip: If at any point your character becomes covered by the background, go to the inspector for the Game Object (not the spritesheet) and under `Sprite Renderer` change `Order in Layer` to 1.<br>
+<br>
 Hit play.<br>
 <br>
 Good job! You have finished getting a character to move around your game world.<br>
