@@ -254,3 +254,20 @@ Good job!<br>
 <br>
 
 ![](https://media.giphy.com/media/9uI997mC531DAUQmaU/giphy.gif)
+
+### Camera Tracking
+
+There's one last component to proper character movement. We want the camera to track the player as they move in the world. <br>
+<br>
+Go to the Script folder and create a new C# Script "CameraController". Drag and drop it onto camera to add it as a component, then open it in your preferred editor.<br>
+<br>
+First we will declare a few variables before the `Start` function.
+```
+public GameObject target;
+private Vector3 targetPos; 
+public float cameraSpeed;
+```
+Target is the GameObject the camera should follow. Right now that's the player character, but there may be times we want the camera to follow something else. The targetPos is target position. Then we have camera movement speed.<br>
+<br>
+<br>
+<br>
