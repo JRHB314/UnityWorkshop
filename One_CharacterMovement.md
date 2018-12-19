@@ -288,4 +288,4 @@ Hit play.<br>
 <br>
 Good job! You have finished getting a character to move around your game world.<br>
 <br>
-![](http://www.giphy.com/gifs/kFMNKCTrcszFIEwruO)
+![](https://media.giphy.com/media/kFMNKCTrcszFIEwruO/giphy.gif)
