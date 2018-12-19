@@ -2,7 +2,7 @@
 
 ### Importing your character spritesheet
 
-The first thing is to choose a spritesheet. You can use any of the spritesheets in this repo's Sprites folder, or anything else that follows the "LPC" format. For other size spritesheets these instructions would be slightly different. <br>
+The first thing is to choose a spritesheet. You can use any of the spritesheets in this repo's `Assets` folder, or anything else that follows the "LPC" format. For other size spritesheets these instructions would be slightly different. <br>
 <br>
 Go to the Projects pane, right click and create folder "Characters". Double click to open the folder in the pane. <br>
 <br>
