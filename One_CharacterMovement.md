@@ -280,5 +280,5 @@ transform.position = Vector3.Lerp(transform.position, targetPos, cameraSpeed * T
 xPos and yPos are our target's x and y position. zPos, meanwhile, is our camera's z position. This is because the camera should be above the scene looking down on it; you wouldn't be able to see anything if it was "inside" the rest of the scene.<br>
 targetPos is set by creating a new Vector3 that takes in our three position values. Then we want to take that Vector3 and move the camera's position. "Lerp" stands for "linear interpolation"; it takes two vectors and finds a position between them. In this case it uses our speed to see how much it should be moved from our startpoint vector (current position) to our endpoint vector (target position).<br>
 <br>
-<br>
-<br>
+Save, then go back to Unity. Change Camera Speed to 8, and drag and drop the character Game Object onto the `Target` field.<br>
+If you go to the game and hit play, try moving around. You can see the camera now follows a bit behind the player, and catches up when you stop moving. It may seem like the player stops moving entirely because the background is a flat color, this can easily be changed by adding in a patterned background. <br>
