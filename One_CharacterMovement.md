@@ -249,9 +249,6 @@ Add a transition from playerWalk to playerIdle.
 Go back to the game and hit play.<br>  
 <br>
 If everything was done correctly, the character should now walk around, with walking and idle animations playing correctly.<br>
-<br>
-Good job!<br>
-<br>
 
 ![](https://media.giphy.com/media/9uI997mC531DAUQmaU/giphy.gif)
 
@@ -287,6 +284,7 @@ Go to the `Sprites` folder in this workshop, and download the "grass.png" file. 
 Click on the grass to open inspector. Change `Pixels Per Unit` to 32, and `Filter Mode` to `Point (no filter)`.<br>
 Drag and drop the grass onto your scene so it's fairly centered under the camera. <br>
 <br>
-Hit play!<br>
+Hit play.<br>
 <br>
+Good job! You have finished getting a character to move around your game world.<br>
 <br>
