@@ -2,4 +2,6 @@
 
 This workshop will cover creating maps, adding items, enabling collision, and so on.
 
-### Enabling collisions
+### Enabling Collisions
+
+There are two components needed to enable collision. One, a 
