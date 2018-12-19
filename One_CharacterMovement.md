@@ -267,7 +267,18 @@ public GameObject target;
 private Vector3 targetPos; 
 public float cameraSpeed;
 ```
-Target is the GameObject the camera should follow. Right now that's the player character, but there may be times we want the camera to follow something else. The targetPos is target position. Then we have camera movement speed.<br>
+Target is the GameObject the camera should follow. Right now that's the player character, but there may be times we want the camera to follow something else. The targetPos is target position. Then we have camera movement speed. We'll set it to be slightly less than character movement speed, so it takes a second to "catch up". This makes the camera feel more lively.<br>
+<br>
+Inside `Update`, put this code.
+```
+float xPos = target.transform.position.x;
+float yPos = target.transform.position.y;
+float zPos = transform.position.z;
+targetPos = new Vector3(xPos, yPos, zPos);
+transform.position = Vector3.Lerp(transform.position, targetPos, cameraSpeed * Time.deltaTime);
+```
+xPos and yPos are our target's x and y position. zPos, meanwhile, is our camera's z position. This is because the camera should be above the scene looking down on it; you wouldn't be able to see anything if it was "inside" the rest of the scene.<br>
+targetPos is set by creating a new Vector3 that takes in our three position values. Then we want to take that Vector3 and move the camera's position. "Lerp" stands for "linear interpolation"; it takes two vectors and finds a position between them. In this case it uses our speed to see how much it should be moved from our startpoint vector (current position) to our endpoint vector (target position).<br>
 <br>
 <br>
 <br>
