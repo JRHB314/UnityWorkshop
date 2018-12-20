@@ -8,7 +8,8 @@ First, a word of warning/advice. There are two things called "Layers" in Unity. 
 <br>
 Select any Game Object to open up its Inspector. Under the `Sprite Renderer` component, there should be a field called `Sorting Layer`. By default, everything is put on the `Default` layer. We want to create three sorting layers: background, objects, and characters.<br>
 <br>
-Hit the plus sign to add the three new layers. "Default" should remain on top, followed by "Characters", then "Objects", and finally "Background".
+Hit the plus sign to add the three new layers. "Default" should stay lowest, followed by "Characters", then "Objects", and finally "Background". Ironically, lower layers in this list will display above higher layers.<br>
+Click on our player Game Object. Change its Sorting Layer to `Characters`. Change the grass's Sorting Layer to `Background`. At the moment, we don't have any objects, but that's about to change. In future, know that you can select multiple Game Objects to change their layer all at once. 
 
 ### Enabling Collisions
 
