@@ -12,4 +12,4 @@ Hit the plus sign to add the three new layers. "Default" should remain on top, f
 
 ### Enabling Collisions
 
-There are two components needed to enable collision. One, a 
+There are two components needed to enable collision. One, a RigidBody2D component. This allows a Game Object to have physics at all. The second is some kind of Collider component. There are several, separated by shape. BoxCollider2D is the simplest, but you can have circle, capsule, or custom shapes as well. 
