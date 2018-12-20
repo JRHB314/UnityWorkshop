@@ -16,4 +16,8 @@ Click on our player Game Object. Change its Sorting Layer to `Characters`. Chang
 
 ### Enabling Collisions
 
-There are two components needed to enable collision. One, a RigidBody2D component. This allows a Game Object to have physics at all. The second is some kind of Collider component. There are several, separated by shape. BoxCollider2D is the simplest, but you can have circle, capsule, or custom shapes as well. 
+There are two components needed to enable collision. One, a RigidBody2D component. This allows a Game Object to have physics at all. The second is some kind of Collider component. There are several, separated by shape. BoxCollider2D is the simplest, but you can have circle, capsule, or custom shapes as well. <br>
+<br>
+Go to the Inspector for the player and hit `Add Component`. Go to `Physics 2D` -> `RigidBody2D`. For `Gravity Scale`, set it to "0". If there is gravity, it will cause the player to "fall" down the screen. <br>
+<br>
+Now `Add Component` -> `Physics 2D` -> `Circle Collider 2D`. This will be 
