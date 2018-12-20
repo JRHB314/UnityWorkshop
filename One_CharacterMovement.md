@@ -9,9 +9,13 @@ Go to the Projects pane, right click and create folder "Characters". Double clic
 Drag and drop spritesheet of choice into the folder, then click on it to open up Inspector view. <br>
 <br>
 Make the following changes:
-* Change sprite mode from Single to Multiple. This is to tell Unity this is a spritesheet with multiple sprites within it.
-* Change Pixels per Unit to 32. This indicates the height and width of a single “cell” or tile. 
-* Go to advanced and change Filter Mode to `Point (no filter)`. This is important for pixel art! Otherwise it will appear blurry.
+* Change `Sprite Mode` from `Single` to `Multiple`. This is to tell Unity this is a spritesheet with multiple sprites within it.
+* Change `Pixels per Unit` to "32". This indicates the height and width of a single “cell” or tile. In general it's good for all image assets to have the same or close to the level Pixels per Unit, so they will have the same level of detail. 
+* Go to `Advanced` and change `Filter Mode` to `Point (no filter)`. This is important for pixel art! Otherwise it will appear blurry.
+* Change `Max Size` to `1024`. In general we want this to be as low as possible while still being higher than the width and height of the image. This helps keep project size down. 
+* Change `Compression` to `None`. With pixel art, compression is both unecessary and can cause problems.
+
+Note, these settings will have to be changed every time you import an image asset. Not all images will be spritesheets, but almost all will need to have their `Pixels per Unit` and `Max Size` adjusted. All pixel art needs to be `Point (no filter)` and have no compression. 
 
 ### Slicing spritesheet
 Now open Sprite editor (there is a button in the Inspector). You may have to hit `Apply` to `Import Changes`. <br>
@@ -281,7 +285,13 @@ Save, then go back to Unity. Change Camera Speed to 8, and drag and drop the cha
 If you go to the game and hit play, try moving around. You can see the camera now follows a bit behind the player, and catches up when you stop moving. It may seem like the player stops moving entirely because the background is a flat color, this can easily be changed by adding in a patterned background. <br>
 <br>
 Go to the `Assets` folder in this workshop, and download the "grass.png" file. In your Unity Assets, create a folder called "Background" and import the grass file.<br>
-Click on the grass to open inspector. Change `Pixels Per Unit` to 32, and `Filter Mode` to `Point (no filter)`.<br>
+Click on the grass to open inspector. <br>
+<br>
+Change:
+* `Pixels Per Unit` to 32
+* `Filter Mode` to `Point (no filter)`
+* `Max Size` to `1024`
+* `Compression` to `None`.
 Drag and drop the grass onto your scene so it's fairly centered under the camera. <br>
 <br>
 Tip: If at any point your character becomes covered by the background, go to the inspector for the character's Game Object (not the spritesheet) and under `Sprite Renderer` change `Order in Layer` to 1.<br>
