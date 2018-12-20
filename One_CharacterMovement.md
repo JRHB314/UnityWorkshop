@@ -34,8 +34,11 @@ In Project view, click the small arrow on the right of the spritesheet. It shoul
 
 ### Creating Animations
 
-Drag and drop the whole sheet (not one of the individual sprites) onto the scene. <br>
-Delete the animation and animation controller that is created automatically. <br>
+Drag and drop the whole sheet (not one of the individual sprites) onto the scene. In the hierarchy, a new Game Object should appear. Right click it and rename it "player".<br>
+<br>
+By default, the Game Object will display the first sprite in the sheet in our Scene preview. It doesn't matter much for once the game is actually running, but you can change it for your own convenience. In the Inspector pane, go to the `Sprite Renderer` component, and click on the very first field, for `Sprite`. It should highlight the first sprite on your spritesheet within your Project pane. Simply drag and drop, for example, the front facing sprite onto the `Sprite` field, and that will become the new default sprite for the Game Object.<br>
+<br>
+Delete the animation and animation controller that were created automatically with the Game Object. They should be inside your "Characters" folder. <br>
 <br>
 Hit ctrl+6 (on Windows) or ⌘+6 (on Mac) to open up the Animation pane. Drag and drop this new view as a tab next to the Game view's tab.<br> 
 <br> 
