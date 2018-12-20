@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharMove : MonoBehaviour {
+public class characterMovement : MonoBehaviour {
 
 	public float moveSpeed;
 
