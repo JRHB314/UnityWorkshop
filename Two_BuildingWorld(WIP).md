@@ -2,6 +2,14 @@
 
 This workshop will cover creating maps, adding items, enabling collision, and so on.
 
+### Sorting Layers
+
+First, a word of warning/advice. There are two things called "Layers" in Unity. "Sorting Layers" are how objects are seen by the camera. The "Layers" accessed in the toolbar are for grouping objects by how they should interact with other objects. For the most part, we will be using "Sorting Layers". <br>
+<br>
+Select any Game Object to open up its Inspector. Under the `Sprite Renderer` component, there should be a field called `Sorting Layer`. By default, everything is put on the `Default` layer. We want to create three sorting layers: background, objects, and characters.<br>
+<br>
+Hit the plus sign to add the three new layers. "Default" should remain on top, followed by "Characters", then "Objects", and finally "Background".
+
 ### Enabling Collisions
 
 There are two components needed to enable collision. One, a 
